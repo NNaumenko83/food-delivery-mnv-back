@@ -30,7 +30,7 @@ const orderSchema = new Schema(
     },
 
     products: {
-      type: Object,
+      type: Array,
       required: [true, "Products not found"],
     },
   },
@@ -43,7 +43,7 @@ const addOrderSchema = Joi.object({
   phone: Joi.string().required(),
   adress: Joi.string().required(),
   shop: Joi.string().required(),
-  products: Joi.object().required(),
+  products: Joi.array().required(),
 });
 
 orderSchema.post("save", handleMongooseError);
