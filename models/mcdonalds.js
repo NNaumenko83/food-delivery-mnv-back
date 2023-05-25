@@ -19,6 +19,6 @@ const mcdonaldsSchema = new Schema(
 
 mcdonaldsSchema.post("save", handleMongooseError);
 
-const Mcdonalds = model("mcdonalds", mcdonaldsSchema);
+const Mcdonalds = model("mcdonald", mcdonaldsSchema);
 
 module.exports = { Mcdonalds };

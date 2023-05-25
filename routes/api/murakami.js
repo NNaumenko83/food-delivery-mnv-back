@@ -3,6 +3,6 @@ const ctrl = require("../../controllers/murakami");
 
 const router = express.Router();
 
-router.get("/orders", ctrl.getAll);
+router.get("", ctrl.getAll);
 
 module.exports = router;

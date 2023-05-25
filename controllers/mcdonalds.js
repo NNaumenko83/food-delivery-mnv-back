@@ -1,7 +1,6 @@
 const { HttpError, ctrlWrapper } = require("../helpers");
 const { Mcdonalds } = require("../models/mcdonalds");
 
-
 const getAll = async (_, res) => {
   const result = await Mcdonalds.find();
   console.log("result:", result);

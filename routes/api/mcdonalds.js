@@ -3,6 +3,6 @@ const ctrl = require("../../controllers/mcdonalds");
 
 const router = express.Router();
 
-router.get("/mcdonalds", ctrl.getAll);
+router.get("", ctrl.getAll);
 
 module.exports = router;
